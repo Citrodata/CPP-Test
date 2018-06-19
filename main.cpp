@@ -8,7 +8,6 @@ using namespace std;
 int main(int argv,char** argc)
 {
     string s;
-    //getline(cin,s);
 
     cout << s << endl;
 
