@@ -3,7 +3,7 @@ language: cpp
 os:
 - linux
 
-before_install:
+install:
 - sudo apt install build-essential
 
 script:

@@ -7,5 +7,5 @@ rm -rf Makefile
 touch Makefile
 
 #Clean Project
-echo "clean:\n" > Makefile
-echo "rm -rf *.o ${PROG}\n" >> Makefile
+echo "clean:" > Makefile
+echo "rm -rf *.o ${PROG}" >> Makefile
