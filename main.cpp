@@ -13,6 +13,6 @@ int main(int argv,char** argc)
 
     write("Geht er wirklich Bowlen");
     newline();
-
+    newline();
     return 0;
 }
