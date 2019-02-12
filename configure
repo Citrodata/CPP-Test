@@ -3,23 +3,23 @@ rm -f Makefile
 touch Makefile
 
 #Define Project
-printf "CXX=g++" >> Makefile
-printf "PROG=cppdata" >> Makefile
-printf "OBJS=lib.o main.o" >> Makefile
+printf "CXX=g++\n" >> Makefile
+printf "PROG=cppdata\n" >> Makefile
+printf "OBJS=lib.o main.o\n" >> Makefile
 
 #All Project
-printf "all: ${PROG}" >> Makefile
+printf "all: ${PROG}\n" >> Makefile
 
 #Link Project
-printf "${PROG}: ${OBJS}" >> Makefile
-printf "\t${CXX} -o ${PROG} $^" >> Makefile
+printf "${PROG}: ${OBJS}\n" >> Makefile
+printf "\t${CXX} -o ${PROG} $^\n" >> Makefile
 
 #Compile Project
-printf "%.o: %.c:" >> Makefile
-printf "\t${CXX} -c $< -o $@" >> Makefile
+printf "%.o: %.c:\n" >> Makefile
+printf "\t${CXX} -c $< -o $@\n" >> Makefile
 
 #Clean Project
-printf "clean:" >> Makefile
-printf "\trm -rf *.o ${PROG}" >> Makefile
+printf "clean:\n" >> Makefile
+printf "\trm -rf *.o ${PROG}\n" >> Makefile
 
 cat Makefile
